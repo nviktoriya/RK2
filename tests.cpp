@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "directory_and_file.cpp"
+#include "directory_and_file.h"
 
 // Тест для вычисления размера файла
 TEST(FileTest, CalculateSize) {
