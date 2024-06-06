@@ -23,7 +23,7 @@ jobs:
         ./tests
 
     - name: Compile main
-      run: g++ -std=c++11 directory_and_file.cpp -o directory_and_file
+      run: g++ -std=c++20 directory_and_file.cpp -o directory_and_file
       
     - name: Run main
       run: ./directory_and_file
