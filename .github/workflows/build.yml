@@ -22,6 +22,10 @@ jobs:
         cd build
         ./tests
 
+    - name: Run main
+      run: |
+        ./directory_and_file
+
     - name: Upload artifact
       uses: actions/upload-artifact@v2
       with:
