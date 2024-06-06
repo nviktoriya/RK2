@@ -22,10 +22,11 @@ jobs:
         cd build
         ./tests
 
+    - name: Compile main
+      run: g++ -std=c++11 directory_and_file.cpp -o directory_and_file
+      
     - name: Run main
-      run: |
-        cd ..
-        directory_and_file.cpp
+      run: ./directory_and_file
 
     - name: Upload artifact
       uses: actions/upload-artifact@v2
